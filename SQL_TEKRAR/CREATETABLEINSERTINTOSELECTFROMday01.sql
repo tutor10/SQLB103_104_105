@@ -9,8 +9,8 @@ CREATE DATABASE Tastan;
 
 CREATE TABLE ogrenciler
 (
-    ogrenci_no char(7),
-	isim varchar(20),
+    ogrenci_no char(7),-----UZUNLUGUNU BILDIGIMIZ STRINGLER ICIN 'CHAR' KULLANILIR
+	isim varchar(20),-------UZUNLUGUNU BILMEDIGIMIZ STRINGLER ICIN 'VARCHAR' KULLANIRIZ
 	soyisim varchar(25),
 	not_ort real,---------->Ondalikli sayilar icin kullanilir (Double gibi)
 	kayit_tarih date
@@ -43,5 +43,4 @@ INSERT INTO ogrenciler(isim,soyisim) VALUES ('Erol','Evren');
 
 -----SELECT
 
-SELECT * FROM ogrenciler;
-
+SELECT * FROM ogrenciler;------>--BURDAKI * SEMBOLU HERSEYI ANLAMINDADIR.

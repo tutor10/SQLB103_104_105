@@ -259,6 +259,7 @@ Sutun adi kullanirsak o sutundaki sayilari verir.
 SELECT * FROM calisanlar2
 SELECT * FROM markalar
 
+--------------IKINCI DERS----------------
 
 --AGGREGATE METHODLARDA SUBQUERY
 
@@ -271,11 +272,10 @@ FROM markalar;
 
 -- Her markanin ismini, calisan sayisini ve 
 --o markaya ait calisanlarin toplam maaşini listeleyiniz
-CREATE VIEW summaas
-AS
-SELECT marka_isim,calisan_sayisi,
-(SELECT sum(maas)AS toplam_mmas FROM calisanlar2 WHERE isyeri=marka_isim)
-FROM markalar;
+
+SELECT marka_isim,calisan_sayisi,(SELECT SUM(MAAS) AS maas_toplami FROM calisanlar2 WHERE marka_isim=isyeri) FROM markalar;
+
+
 --AS parantez disina koyulur genel mantik
 
 -- Her markanin ismini, calisan sayisini ve
@@ -291,6 +291,12 @@ FROM markalar
 Yaptigimiz sorgulari hafizaya alir ve tekrar bizden istenen sorgulama yerine 
 VIEW e atadigimiz ismi SELECT komutuyla cagiririz.
 */
+
+CREATE VIEW summaas
+AS
+SELECT marka_isim,calisan_sayisi,
+(SELECT sum(maas)AS toplam_mmas FROM calisanlar2 WHERE isyeri=marka_isim)
+FROM markalar;
 
 CREATE VIEW maxminmaas
 AS 
