@@ -21,7 +21,7 @@ INSERT INTO notlar VALUES ('Adem',95.5);
 select * from notlar;
 select isim from notlar;
 
--- CONSTRAINT
+--CONSTRAINT ---Kendimiz isim vermek icin kullaniriz
 --UNIQEU
 --NOT NULL
 
@@ -61,7 +61,7 @@ isim varchar(20),
 soyisim varchar(25),
 not_ort real,
 kayit_tarih date,
-CONSTRAINT ogr PRIMARY KEY(ogrenci_no)
+CONSTRAINT ogr PRIMARY KEY(ogrenci_no)--birden fazla field olabilir ,primary key constraint kullanarak bunada COMPOSITE KEY denir.UNIQUE icinde aynisini yapabiliriz
 );
 
 CREATE TABLE ogrenciler10

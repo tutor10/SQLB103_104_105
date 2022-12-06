@@ -25,6 +25,7 @@ SELECT calisan_id AS id, concat (calisan_isim,' ',calisan_dogdugu_sehir) AS cali
 
 
 -------IS NULL CONDITION***********
+
 ---- Arama yapilan field’da NULL degeri almis kayitlari getirir
 
 CREATE TABLE insanlar

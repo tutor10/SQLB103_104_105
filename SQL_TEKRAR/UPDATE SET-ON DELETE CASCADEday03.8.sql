@@ -1,4 +1,4 @@
--------DML --->UPDATE SET  ******** update Tablaodaki datayi update eder SET--->degistirme 
+-------DML --->UPDATE SET  ******** update Tablaodaki datayi update eder SET--->degistirme UPDATE sutun ismi SET ..... seklinde yazilir
 -- parent
 CREATE TABLE tedarikciler4 
 (
