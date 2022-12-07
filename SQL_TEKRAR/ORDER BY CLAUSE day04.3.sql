@@ -47,12 +47,21 @@ SELECT * FROM insanlar1 ORDER BY soyisim;
 
 SELECT * FROM insanlar1 WHERE isim='Mine' ORDER BY ssn;--ORDER BY NATURAL SIRALAMA YAPAR YANI KUCUKTEN BUYUGE***********
 
+--Insanlar tablosundaki soyismi Bulut olanlari isim sirali olarak listeleyin
 
+SELECT * FROM insanlar1 WHERE soyisim='Bulut' ORDER BY 2;
 
+---Eger BUYUKTEN KUCUGE siralamak istersek ORDER BY komutundan sonra DESC komutunu kullaniriz
+-- ORDER BY field_name DESC CLAUSE
+ 
+-- Insanlar tablosundaki tum kayitlari SSN numarasi buyukten kucuge olarak siralayin
 
+SELECT * FROM insanlar1 ORDER BY ssn DESC;--buyukten kucuge siralndi
 
+-- Insanlar tablosundaki tum kayitlari isimler Natural sirali, Soyisimler ters sirali olarak listeleyin
 
-
+SELECT * FROM insanlar1 ORDER BY isim ASC,soyisim DESC;--ASC NATURAL(KUCUKTEN BUYUGE) YAZILMASADA OLUR 
+--                                                        DESC(BUYUKTEN KUCUGE)
 
 
 
