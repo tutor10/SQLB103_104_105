@@ -293,7 +293,7 @@ seklinde yapariz
 
 SELECT LOWER(title),UPPER(isim)FROM personel2;
 
-
+select lower(isim)||' '||upper(title) from personel2;
 
 
 
